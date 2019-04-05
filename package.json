@@ -1,0 +1,50 @@
+{
+  "name": "server-side-CoffeeRanking",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch \"src/server/\" --exec \"ts-node src/server/init.ts\" -e ts",
+    "test": "jest --no-cache",
+    "build": "tsc",
+    "prod": "npm run build && node dist/server/init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sombratwo/server-side-CoffeeRanking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sombratwo/server-side-CoffeeRanking/issues"
+  },
+  "homepage": "https://github.com/sombratwo/server-side-CoffeeRanking#readme",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "@types/jest": "^24.0.11",
+    "@types/supertest": "^2.0.7",
+    "express": "^4.16.4",
+    "jest": "^24.7.1",
+    "nodemon": "^1.18.10",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.1",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.spec\\.ts",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
